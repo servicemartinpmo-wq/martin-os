@@ -1,0 +1,807 @@
+{
+  "frameworks_library": {
+    "metadata": {
+      "version": "1.0",
+      "last_updated": "2026-06-02",
+      "total_frameworks": 150,
+      "categories": 12,
+      "status": "Phase 1 inventory - ready for Phase 2A cleanup"
+    },
+    "framework_categories": {
+      "strategy_analysis": {
+        "name": "Strategic Analysis",
+        "description": "Frameworks for analyzing markets, industries, and competitive positioning",
+        "frameworks": [
+          {
+            "id": "porters_five_forces",
+            "name": "Porter's Five Forces",
+            "domain": "strategy",
+            "use_case": "Analyze competitive forces in an industry",
+            "input_signals": ["market_entry", "industry_analysis", "competitive_threat"],
+            "recommended_when": "Evaluating market attractiveness or competitive position",
+            "avoid_when": "Analyzing internal operational issues or tactical decisions",
+            "required_evidence": ["industry_structure", "competitor_data", "buyer_power", "supplier_power"],
+            "output_type": "diagnosis",
+            "related_frameworks": ["SWOT Analysis", "Strategic Group Mapping"],
+            "phase_3_relevance": "Core for enterprise market analysis"
+          },
+          {
+            "id": "swot_analysis",
+            "name": "SWOT Analysis",
+            "domain": "strategy",
+            "use_case": "Identify internal strengths/weaknesses and external opportunities/threats",
+            "input_signals": ["strategic_planning", "risk_assessment", "opportunity_evaluation"],
+            "recommended_when": "Starting strategic planning or major decision",
+            "avoid_when": "Detailed technical analysis or operational troubleshooting",
+            "required_evidence": ["internal_capabilities", "market_trends", "competitive_landscape"],
+            "output_type": "advisory",
+            "related_frameworks": ["Porter's Five Forces", "Scenario Planning"],
+            "phase_3_relevance": "Foundational for org wrapper strategic context"
+          },
+          {
+            "id": "pestle_analysis",
+            "name": "PESTLE Analysis",
+            "domain": "strategy",
+            "use_case": "Analyze external macro-environmental factors",
+            "input_signals": ["market_uncertainty", "regulatory_change", "technology_shift"],
+            "recommended_when": "Assessing impact of external factors on strategy",
+            "avoid_when": "Tactical operational decisions",
+            "required_evidence": ["political_environment", "economic_data", "social_trends", "technology_landscape", "legal_environment", "environmental_factors"],
+            "output_type": "contextual_guidance",
+            "related_frameworks": ["SWOT Analysis", "Scenario Planning"],
+            "phase_3_relevance": "Important for industry-specific org wrappers"
+          },
+          {
+            "id": "ansoff_matrix",
+            "name": "Ansoff Matrix",
+            "domain": "growth",
+            "use_case": "Evaluate growth strategies across product/market dimensions",
+            "input_signals": ["growth_opportunity", "market_expansion", "product_development"],
+            "recommended_when": "Planning growth strategy or product roadmap",
+            "avoid_when": "Operational efficiency improvements",
+            "required_evidence": ["market_data", "product_capabilities", "competitive_positioning"],
+            "output_type": "advisory",
+            "related_frameworks": ["Blue Ocean Strategy", "Three Horizons"],
+            "phase_3_relevance": "Key for SaaS and platform businesses"
+          },
+          {
+            "id": "strategy_diamond",
+            "name": "Strategy Diamond (Hambrick & Fredrickson)",
+            "domain": "strategy",
+            "use_case": "Comprehensive strategy framework covering all strategic dimensions",
+            "input_signals": ["strategy_setting", "strategic_alignment", "execution_planning"],
+            "recommended_when": "Developing comprehensive strategy covering arenas, vehicles, differentiators, staging, economic logic",
+            "avoid_when": "Tactical decisions",
+            "required_evidence": ["market_data", "capabilities_inventory", "financial_modeling"],
+            "output_type": "advisory",
+            "related_frameworks": ["Porter's Five Forces", "Value Chain Analysis"],
+            "phase_3_relevance": "Essential for enterprise strategy alignment"
+          },
+          {
+            "id": "core_competency_model",
+            "name": "Core Competency Model",
+            "domain": "strategy",
+            "use_case": "Identify unique capabilities that create competitive advantage",
+            "input_signals": ["competitive_advantage", "capability_assessment", "resource_allocation"],
+            "recommended_when": "Evaluating what capabilities to protect or develop",
+            "avoid_when": "Operational process improvement",
+            "required_evidence": ["capability_inventory", "competitive_analysis", "market_data"],
+            "output_type": "advisory",
+            "related_frameworks": ["Value Chain Analysis", "Strategic Group Mapping"],
+            "phase_3_relevance": "Important for org differentiation"
+          },
+          {
+            "id": "value_chain_analysis",
+            "name": "Value Chain Analysis",
+            "domain": "strategy",
+            "use_case": "Analyze sources of competitive advantage across business activities",
+            "input_signals": ["cost_analysis", "differentiation_opportunity", "operational_efficiency"],
+            "recommended_when": "Identifying where to create or capture value",
+            "avoid_when": "Short-term tactical decisions",
+            "required_evidence": ["activity_costs", "competitive_positioning", "customer_value"],
+            "output_type": "diagnosis",
+            "related_frameworks": ["Porter's Five Forces", "Core Competency Model"],
+            "phase_3_relevance": "Key for understanding org value creation"
+          },
+          {
+            "id": "blue_ocean_strategy",
+            "name": "Blue Ocean Strategy",
+            "domain": "growth",
+            "use_case": "Create uncontested market space instead of competing in crowded markets",
+            "input_signals": ["market_saturation", "innovation_opportunity", "differentiation"],
+            "recommended_when": "Seeking to differentiate from competitors or create new markets",
+            "avoid_when": "Operational optimization in existing market",
+            "required_evidence": ["competitive_landscape", "customer_value_drivers", "industry_trends"],
+            "output_type": "advisory",
+            "related_frameworks": ["Ansoff Matrix", "Disruptive Innovation"],
+            "phase_3_relevance": "For innovative positioning"
+          },
+          {
+            "id": "three_horizons",
+            "name": "Three Horizons Framework",
+            "domain": "strategy",
+            "use_case": "Balance current business with emerging opportunities and transformational innovation",
+            "input_signals": ["portfolio_planning", "innovation_timing", "resource_allocation"],
+            "recommended_when": "Planning multi-year strategy and innovation portfolio",
+            "avoid_when": "Tactical decisions",
+            "required_evidence": ["financial_projections", "market_trends", "innovation_pipeline"],
+            "output_type": "advisory",
+            "related_frameworks": ["Ansoff Matrix", "Innovation Ambition Matrix"],
+            "phase_3_relevance": "Critical for long-term positioning"
+          }
+        ]
+      },
+      "growth_strategy": {
+        "name": "Growth Strategy",
+        "description": "Frameworks focused on expanding revenue, customer base, or market share",
+        "frameworks": [
+          {
+            "id": "business_model_canvas",
+            "name": "Business Model Canvas",
+            "domain": "product",
+            "use_case": "Visual representation of how organization creates, delivers, and captures value",
+            "input_signals": ["business_model_design", "value_proposition", "revenue_model"],
+            "recommended_when": "Designing or restructuring business model",
+            "avoid_when": "Detailed operational processes",
+            "required_evidence": ["customer_segments", "value_propositions", "revenue_streams", "cost_structure"],
+            "output_type": "advisory",
+            "related_frameworks": ["Value Chain Analysis", "Lean Canvas"],
+            "phase_3_relevance": "Important for org wrapper business context"
+          },
+          {
+            "id": "north_star_metric",
+            "name": "North Star Metric Framework",
+            "domain": "product",
+            "use_case": "Single metric that captures value delivered to customers",
+            "input_signals": ["goal_alignment", "performance_tracking", "strategy_execution"],
+            "recommended_when": "Aligning organization around key success metric",
+            "avoid_when": "Multi-dimensional analysis",
+            "required_evidence": ["customer_value", "business_model", "strategic_goals"],
+            "output_type": "scoring",
+            "related_frameworks": ["OKRs", "Balanced Scorecard"],
+            "phase_3_relevance": "Essential for measuring platform success"
+          },
+          {
+            "id": "aarrr_funnel",
+            "name": "AARRR Growth Funnel (Pirate Metrics)",
+            "domain": "growth",
+            "use_case": "Analyze customer lifecycle: Acquisition, Activation, Retention, Referral, Revenue",
+            "input_signals": ["growth_bottleneck", "funnel_optimization", "customer_lifecycle"],
+            "recommended_when": "Optimizing user/customer acquisition and lifecycle",
+            "avoid_when": "Supply chain or operational analysis",
+            "required_evidence": ["user_metrics", "conversion_data", "retention_rates", "referral_data"],
+            "output_type": "diagnosis",
+            "related_frameworks": ["Lean Startup", "Customer Journey Mapping"],
+            "phase_3_relevance": "Critical for SaaS business growth"
+          },
+          {
+            "id": "product_led_growth",
+            "name": "Product-Led Growth",
+            "domain": "product",
+            "use_case": "Use product experience as primary driver of acquisition and retention",
+            "input_signals": ["acquisition_channel", "customer_activation", "expansion_opportunity"],
+            "recommended_when": "Designing self-serve product experience or reducing sales friction",
+            "avoid_when": "Sales-led models or complex B2B enterprises",
+            "required_evidence": ["product_usage", "user_feedback", "activation_metrics", "churn_analysis"],
+            "output_type": "advisory",
+            "related_frameworks": ["Hooked Model", "Lean Startup"],
+            "phase_3_relevance": "For self-serve platform design"
+          },
+          {
+            "id": "hooked_model",
+            "name": "Hooked Model (Nir Eyal)",
+            "domain": "product",
+            "use_case": "Create habit-forming products through trigger-action-reward cycles",
+            "input_signals": ["user_engagement", "habit_formation", "product_stickiness"],
+            "recommended_when": "Designing for user engagement and retention",
+            "avoid_when": "Enterprise B2B analysis",
+            "required_evidence": ["user_behavior", "engagement_metrics", "retention_data"],
+            "output_type": "advisory",
+            "related_frameworks": ["Product-Led Growth", "Customer Journey Mapping"],
+            "phase_3_relevance": "For consumer-facing products"
+          },
+          {
+            "id": "flywheel_model",
+            "name": "Flywheel Growth Model",
+            "domain": "growth",
+            "use_case": "Create self-reinforcing cycle where customer success drives acquisition",
+            "input_signals": ["network_effects", "customer_advocacy", "growth_acceleration"],
+            "recommended_when": "Building growth momentum through customer advocacy",
+            "avoid_when": "Linear funnel models",
+            "required_evidence": ["customer_satisfaction", "referral_data", "network_effects"],
+            "output_type": "advisory",
+            "related_frameworks": ["AARRR Funnel", "Network Effects"],
+            "phase_3_relevance": "For platform and marketplace models"
+          }
+        ]
+      },
+      "operations_improvement": {
+        "name": "Operations & Process Improvement",
+        "description": "Frameworks focused on improving efficiency, reducing waste, and optimizing workflows",
+        "frameworks": [
+          {
+            "id": "lean_manufacturing",
+            "name": "Lean Manufacturing",
+            "domain": "operations",
+            "use_case": "Eliminate waste and optimize production processes",
+            "input_signals": ["process_inefficiency", "waste_identification", "throughput_bottleneck"],
+            "recommended_when": "Improving manufacturing or production efficiency",
+            "avoid_when": "Knowledge worker productivity or strategic decisions",
+            "required_evidence": ["process_flow", "cycle_time_data", "waste_analysis"],
+            "output_type": "diagnosis",
+            "related_frameworks": ["Theory of Constraints", "Value Stream Mapping", "Six Sigma"],
+            "phase_3_relevance": "For manufacturing industry orgs"
+          },
+          {
+            "id": "theory_of_constraints",
+            "name": "Theory of Constraints (TOC)",
+            "domain": "operations",
+            "use_case": "Identify and remove system bottleneck limiting throughput",
+            "input_signals": ["bottleneck_detection", "throughput_limitation", "capacity_constraint"],
+            "recommended_when": "System has clear bottleneck limiting performance",
+            "avoid_when": "Distributed problems or capacity surplus",
+            "required_evidence": ["process_metrics", "constraint_identification", "flow_analysis"],
+            "output_type": "diagnosis",
+            "related_frameworks": ["Lean Manufacturing", "Value Stream Mapping"],
+            "phase_3_relevance": "Essential for operations orgs"
+          },
+          {
+            "id": "value_stream_mapping",
+            "name": "Value Stream Mapping",
+            "domain": "operations",
+            "use_case": "Visualize process flow and identify improvement opportunities",
+            "input_signals": ["process_visibility", "waste_reduction", "flow_optimization"],
+            "recommended_when": "Analyzing complex processes for waste and improvement",
+            "avoid_when": "Quick tactical fixes",
+            "required_evidence": ["process_steps", "timing_data", "resource_consumption"],
+            "output_type": "diagnosis",
+            "related_frameworks": ["Lean Manufacturing", "Theory of Constraints"],
+            "phase_3_relevance": "For process optimization"
+          },
+          {
+            "id": "six_sigma",
+            "name": "Six Sigma",
+            "domain": "operations",
+            "use_case": "Reduce variation and defects through statistical process control",
+            "input_signals": ["quality_issues", "process_variation", "defect_rate"],
+            "recommended_when": "Improving quality and reducing process variation",
+            "avoid_when": "Process design or radical change",
+            "required_evidence": ["statistical_data", "process_metrics", "defect_analysis"],
+            "output_type": "diagnosis",
+            "related_frameworks": ["Lean Manufacturing", "Total Quality Management"],
+            "phase_3_relevance": "For quality-critical operations"
+          },
+          {
+            "id": "pdca_cycle",
+            "name": "PDCA Cycle (Plan-Do-Check-Act)",
+            "domain": "operations",
+            "use_case": "Continuous improvement through iterative testing and refinement",
+            "input_signals": ["continuous_improvement", "hypothesis_testing", "process_refinement"],
+            "recommended_when": "Implementing continuous improvement culture",
+            "avoid_when": "Large-scale transformations",
+            "required_evidence": ["baseline_metrics", "test_results", "improvement_data"],
+            "output_type": "workflow",
+            "related_frameworks": ["Lean Startup", "Kaizen"],
+            "phase_3_relevance": "Foundation for all improvement work"
+          }
+        ]
+      },
+      "project_management": {
+        "name": "Project Management & PMO",
+        "description": "Frameworks for planning, executing, and governing projects",
+        "frameworks": [
+          {
+            "id": "work_breakdown_structure",
+            "name": "Work Breakdown Structure (WBS)",
+            "domain": "project_management",
+            "use_case": "Decompose project into manageable work packages",
+            "input_signals": ["project_planning", "scope_definition", "work_estimation"],
+            "recommended_when": "Starting project planning or defining scope",
+            "avoid_when": "Tactical task execution",
+            "required_evidence": ["project_scope", "deliverables", "dependencies"],
+            "output_type": "structural_relevance",
+            "related_frameworks": ["Critical Path Method", "RACI"],
+            "phase_3_relevance": "Essential for project governance"
+          },
+          {
+            "id": "critical_path_method",
+            "name": "Critical Path Method (CPM)",
+            "domain": "project_management",
+            "use_case": "Identify longest sequence of dependent tasks to determine project duration",
+            "input_signals": ["schedule_compression", "deadline_risk", "resource_constraints"],
+            "recommended_when": "Managing complex projects with tight schedules",
+            "avoid_when": "Simple sequential projects",
+            "required_evidence": ["task_list", "dependencies", "duration_estimates"],
+            "output_type": "structural_relevance",
+            "related_frameworks": ["PERT", "Gantt Charts"],
+            "phase_3_relevance": "For complex project management"
+          },
+          {
+            "id": "raci_matrix",
+            "name": "RACI Matrix",
+            "domain": "project_management",
+            "use_case": "Clarify roles and responsibilities: Responsible, Accountable, Consulted, Informed",
+            "input_signals": ["role_clarity", "decision_authority", "accountability"],
+            "recommended_when": "Defining roles for project or process",
+            "avoid_when": "Tactical execution",
+            "required_evidence": ["stakeholder_list", "decision_points", "approval_authority"],
+            "output_type": "structural_relevance",
+            "related_frameworks": ["DACI", "Decision Rights Matrix"],
+            "phase_3_relevance": "Essential for org wrapper governance"
+          },
+          {
+            "id": "daci_matrix",
+            "name": "DACI Matrix",
+            "domain": "project_management",
+            "use_case": "Clarify decision authority: Driver, Approver, Contributors, Informed",
+            "input_signals": ["decision_clarity", "approval_authority", "stakeholder_engagement"],
+            "recommended_when": "Making important organizational decisions",
+            "avoid_when": "Tactical decisions",
+            "required_evidence": ["decision_context", "stakeholders", "approval_authority"],
+            "output_type": "structural_relevance",
+            "related_frameworks": ["RACI", "Decision Rights Framework"],
+            "phase_3_relevance": "For decision governance"
+          },
+          {
+            "id": "agile_framework",
+            "name": "Agile Framework",
+            "domain": "project_management",
+            "use_case": "Iterative, incremental delivery with continuous feedback",
+            "input_signals": ["requirement_uncertainty", "fast_feedback", "rapid_iteration"],
+            "recommended_when": "Projects with uncertain requirements or fast-moving environments",
+            "avoid_when": "Fixed scope or waterfall-mandated projects",
+            "required_evidence": ["backlog", "velocity_data", "sprint_results"],
+            "output_type": "workflow",
+            "related_frameworks": ["Scrum", "Kanban", "Lean Startup"],
+            "phase_3_relevance": "Standard for software projects"
+          },
+          {
+            "id": "scrum",
+            "name": "Scrum",
+            "domain": "project_management",
+            "use_case": "Agile framework with sprints, standups, and retrospectives",
+            "input_signals": ["team_coordination", "sprint_planning", "velocity_tracking"],
+            "recommended_when": "Implementing agile with defined roles and ceremonies",
+            "avoid_when": "Waterfall or fixed-scope projects",
+            "required_evidence": ["sprint_backlog", "burndown_data", "retrospective_notes"],
+            "output_type": "workflow",
+            "related_frameworks": ["Agile Framework", "Kanban"],
+            "phase_3_relevance": "Standard for software development"
+          },
+          {
+            "id": "kanban",
+            "name": "Kanban",
+            "domain": "project_management",
+            "use_case": "Visualize workflow and limit work-in-progress",
+            "input_signals": ["bottleneck_visibility", "flow_optimization", "continuous_delivery"],
+            "recommended_when": "Optimizing continuous flow or visualizing process",
+            "avoid_when": "Fixed schedule requirements",
+            "required_evidence": ["workflow_visualization", "cycle_time_data"],
+            "output_type": "workflow",
+            "related_frameworks": ["Lean Manufacturing", "Agile Framework"],
+            "phase_3_relevance": "For workflow visualization"
+          }
+        ]
+      },
+      "finance": {
+        "name": "Financial Performance & Capital Allocation",
+        "description": "Models for evaluating investments, profitability, and capital efficiency",
+        "frameworks": [
+          {
+            "id": "net_present_value",
+            "name": "Net Present Value (NPV)",
+            "domain": "finance",
+            "use_case": "Evaluate present value of future cash flows for investment decisions",
+            "input_signals": ["investment_evaluation", "project_comparison", "capital_allocation"],
+            "recommended_when": "Comparing investment opportunities with different cash flow profiles",
+            "avoid_when": "Quick yes/no decisions",
+            "required_evidence": ["cash_flow_projections", "discount_rate", "time_horizon"],
+            "output_type": "scoring",
+            "related_formulas": ["Internal Rate of Return", "Payback Period"],
+            "phase_3_relevance": "Essential for financial decision-making"
+          },
+          {
+            "id": "internal_rate_of_return",
+            "name": "Internal Rate of Return (IRR)",
+            "domain": "finance",
+            "use_case": "Calculate annualized return on investment",
+            "input_signals": ["investment_return", "project_comparison", "performance_evaluation"],
+            "recommended_when": "Comparing returns across different investments",
+            "avoid_when": "Short-term analysis",
+            "required_evidence": ["cash_flows", "investment_amount", "time_periods"],
+            "output_type": "scoring",
+            "related_formulas": ["Net Present Value", "Return on Investment"],
+            "phase_3_relevance": "For investment analysis"
+          },
+          {
+            "id": "return_on_investment",
+            "name": "Return on Investment (ROI)",
+            "domain": "finance",
+            "use_case": "Measure profitability relative to investment",
+            "input_signals": ["profitability_assessment", "efficiency_comparison", "budget_allocation"],
+            "recommended_when": "Evaluating efficiency of spending",
+            "avoid_when": "Long-term strategic investments",
+            "required_evidence": ["profit_metrics", "investment_amount"],
+            "output_type": "scoring",
+            "related_formulas": ["ROIC", "Return on Equity"],
+            "phase_3_relevance": "Standard performance metric"
+          },
+          {
+            "id": "economic_value_added",
+            "name": "Economic Value Added (EVA)",
+            "domain": "finance",
+            "use_case": "Measure economic profit after accounting for cost of capital",
+            "input_signals": ["value_creation", "capital_efficiency", "performance_comparison"],
+            "recommended_when": "Assessing whether initiatives create economic value",
+            "avoid_when": "Short-term operational decisions",
+            "required_evidence": ["operating_profit", "capital_employed", "cost_of_capital"],
+            "output_type": "scoring",
+            "related_formulas": ["ROIC", "WACC"],
+            "phase_3_relevance": "For value creation measurement"
+          },
+          {
+            "id": "weighted_average_cost_of_capital",
+            "name": "Weighted Average Cost of Capital (WACC)",
+            "domain": "finance",
+            "use_case": "Calculate blended cost of equity and debt financing",
+            "input_signals": ["investment_threshold", "capital_structure", "cost_of_capital"],
+            "recommended_when": "Evaluating investments against cost of capital",
+            "avoid_when": "Simple operational analysis",
+            "required_evidence": ["cost_of_equity", "cost_of_debt", "capital_structure"],
+            "output_type": "structural_relevance",
+            "related_formulas": ["NPV", "IRR"],
+            "phase_3_relevance": "For investment hurdle rates"
+          }
+        ]
+      },
+      "customer_marketing": {
+        "name": "Customer & Marketing",
+        "description": "Frameworks for understanding customer behavior and optimizing marketing",
+        "frameworks": [
+          {
+            "id": "customer_journey_mapping",
+            "name": "Customer Journey Mapping",
+            "domain": "marketing",
+            "use_case": "Visualize customer experience across touchpoints",
+            "input_signals": ["customer_experience_optimization", "touchpoint_analysis", "pain_point_identification"],
+            "recommended_when": "Improving customer experience or identifying gaps",
+            "avoid_when": "Operational internal processes",
+            "required_evidence": ["customer_data", "touchpoint_list", "interaction_data"],
+            "output_type": "diagnosis",
+            "related_frameworks": ["Customer Personas", "Jobs To Be Done"],
+            "phase_3_relevance": "Essential for customer-centric design"
+          },
+          {
+            "id": "jobs_to_be_done",
+            "name": "Jobs To Be Done Framework",
+            "domain": "product",
+            "use_case": "Understand underlying customer motivations and desired outcomes",
+            "input_signals": ["customer_need_understanding", "product_fit_improvement", "innovation"],
+            "recommended_when": "Understanding why customers adopt products",
+            "avoid_when": "Feature-focused decisions",
+            "required_evidence": ["customer_interviews", "user_behavior_data", "outcome_preferences"],
+            "output_type": "advisory",
+            "related_frameworks": ["Customer Personas", "Value Proposition Canvas"],
+            "phase_3_relevance": "For customer-driven design"
+          },
+          {
+            "id": "customer_acquisition_cost",
+            "name": "Customer Acquisition Cost (CAC)",
+            "domain": "marketing",
+            "use_case": "Calculate cost of acquiring new customers through specific channels",
+            "input_signals": ["marketing_efficiency", "channel_performance", "budget_allocation"],
+            "recommended_when": "Evaluating marketing spend efficiency",
+            "avoid_when": "Strategic market entry decisions",
+            "required_evidence": ["marketing_spend", "new_customers", "conversion_data"],
+            "output_type": "scoring",
+            "related_formulas": ["Customer Lifetime Value", "CAC Payback Period"],
+            "phase_3_relevance": "Critical for growth metrics"
+          },
+          {
+            "id": "customer_lifetime_value",
+            "name": "Customer Lifetime Value (LTV)",
+            "domain": "marketing",
+            "use_case": "Estimate total profit from customer relationship over lifetime",
+            "input_signals": ["customer_economics", "retention_planning", "acquisition_budgeting"],
+            "recommended_when": "Determining sustainable acquisition spend",
+            "avoid_when": "Short-term revenue decisions",
+            "required_evidence": ["customer_revenue", "retention_rates", "churn_data"],
+            "output_type": "scoring",
+            "related_formulas": ["CAC", "CAC Payback Period"],
+            "phase_3_relevance": "Essential for SaaS economics"
+          },
+          {
+            "id": "customer_churn_rate",
+            "name": "Customer Churn Rate",
+            "domain": "marketing",
+            "use_case": "Measure percentage of customers lost during period",
+            "input_signals": ["retention_issue", "product_satisfaction", "competitive_threat"],
+            "recommended_when": "Identifying retention problems or satisfaction issues",
+            "avoid_when": "Acquisition-focused strategies",
+            "required_evidence": ["customer_data", "cancellation_records", "usage_patterns"],
+            "output_type": "signal",
+            "related_formulas": ["Customer Lifetime Value", "Net Revenue Retention"],
+            "phase_3_relevance": "Key health metric for subscriptions"
+          }
+        ]
+      },
+      "organizational_design": {
+        "name": "Organizational Design & Leadership",
+        "description": "Frameworks for structuring organizations and defining leadership",
+        "frameworks": [
+          {
+            "id": "mckinsey_7s",
+            "name": "McKinsey 7S Framework",
+            "domain": "organizational_design",
+            "use_case": "Align seven organizational elements for effectiveness",
+            "input_signals": ["organizational_misalignment", "change_impact", "transformation_planning"],
+            "recommended_when": "Assessing organizational effectiveness or planning transformation",
+            "avoid_when": "Tactical decisions",
+            "required_evidence": ["strategy_alignment", "organizational_structure", "systems", "culture", "skills", "staff", "leadership_style"],
+            "output_type": "diagnosis",
+            "related_frameworks": ["Galbraith Star Model", "Span of Control"],
+            "phase_3_relevance": "Essential for org design"
+          },
+          {
+            "id": "galbraith_star_model",
+            "name": "Galbraith Star Model",
+            "domain": "organizational_design",
+            "use_case": "Align strategy, structure, processes, rewards, and people",
+            "input_signals": ["organizational_effectiveness", "alignment", "change_management"],
+            "recommended_when": "Designing organization to support strategy",
+            "avoid_when": "Tactical decisions",
+            "required_evidence": ["strategy", "structure_design", "process_flows", "reward_systems", "talent_capabilities"],
+            "output_type": "structural_relevance",
+            "related_frameworks": ["McKinsey 7S", "RACI"],
+            "phase_3_relevance": "For org alignment"
+          },
+          {
+            "id": "span_of_control",
+            "name": "Span of Control Analysis",
+            "domain": "organizational_design",
+            "use_case": "Determine optimal number of direct reports per manager",
+            "input_signals": ["management_structure", "communication_flow", "decision_speed"],
+            "recommended_when": "Evaluating management layer effectiveness",
+            "avoid_when": "Short-term staffing",
+            "required_evidence": ["team_structure", "complexity_factors", "manager_capability"],
+            "output_type": "structural_relevance",
+            "related_frameworks": ["McKinsey 7S", "Organization Network Analysis"],
+            "phase_3_relevance": "For management structure"
+          },
+          {
+            "id": "decision_rights_matrix",
+            "name": "Decision Rights Matrix",
+            "domain": "organizational_design",
+            "use_case": "Define who has authority to make decisions in different areas",
+            "input_signals": ["decision_clarity", "accountability", "approval_authority"],
+            "recommended_when": "Defining decision authority across organization",
+            "avoid_when": "Tactical decisions",
+            "required_evidence": ["decision_categories", "authority_levels", "escalation_paths"],
+            "output_type": "structural_relevance",
+            "related_frameworks": ["DACI", "RACI"],
+            "phase_3_relevance": "Essential for governance"
+          }
+        ]
+      },
+      "data_analytics": {
+        "name": "Data & Analytics",
+        "description": "Frameworks for using data to inform decision-making",
+        "frameworks": [
+          {
+            "id": "kpi_trees",
+            "name": "KPI Trees",
+            "domain": "data_analytics",
+            "use_case": "Decompose high-level goals into measurable key performance indicators",
+            "input_signals": ["goal_measurement", "strategy_execution", "performance_tracking"],
+            "recommended_when": "Defining measurement for strategic goals",
+            "avoid_when": "Operational task management",
+            "required_evidence": ["strategic_goals", "success_definitions", "data_availability"],
+            "output_type": "structural_relevance",
+            "related_frameworks": ["Balanced Scorecard", "North Star Metric"],
+            "phase_3_relevance": "For goal alignment"
+          },
+          {
+            "id": "balanced_scorecard",
+            "name": "Balanced Scorecard",
+            "domain": "data_analytics",
+            "use_case": "Measure organizational performance across financial, customer, process, and learning dimensions",
+            "input_signals": ["performance_measurement", "strategy_execution", "organizational_alignment"],
+            "recommended_when": "Creating balanced view of organizational performance",
+            "avoid_when": "Single-metric analysis",
+            "required_evidence": ["strategy_map", "performance_metrics", "targets", "initiatives"],
+            "output_type": "scoring",
+            "related_frameworks": ["KPI Trees", "Strategy Maps"],
+            "phase_3_relevance": "Standard for performance management"
+          },
+          {
+            "id": "crisp_dm",
+            "name": "CRISP-DM (Data Mining Process)",
+            "domain": "data_analytics",
+            "use_case": "Structured process for data science projects: Business understanding, Data prep, Modeling, Evaluation, Deployment",
+            "input_signals": ["data_analysis_need", "insight_generation", "predictive_modeling"],
+            "recommended_when": "Conducting data science project",
+            "avoid_when": "Simple reporting",
+            "required_evidence": ["business_objectives", "available_data", "technical_capability"],
+            "output_type": "workflow",
+            "related_frameworks": ["Data Governance Framework", "Data Maturity Model"],
+            "phase_3_relevance": "For data science projects"
+          },
+          {
+            "id": "data_governance_framework",
+            "name": "Data Governance Framework",
+            "domain": "data_analytics",
+            "use_case": "Establish policies for data quality, security, privacy, and accessibility",
+            "input_signals": ["data_quality_issue", "compliance_requirement", "trust_concern"],
+            "recommended_when": "Establishing data governance practices",
+            "avoid_when": "Short-term analysis",
+            "required_evidence": ["data_inventory", "governance_requirements", "stakeholder_needs"],
+            "output_type": "structural_relevance",
+            "related_frameworks": ["Data Maturity Model", "Compliance Framework"],
+            "phase_3_relevance": "Essential for enterprise data"
+          }
+        ]
+      },
+      "risk_decision_science": {
+        "name": "Risk Management & Decision Science",
+        "description": "Frameworks for managing uncertainty and making decisions under uncertainty",
+        "frameworks": [
+          {
+            "id": "ooda_loop",
+            "name": "OODA Loop",
+            "use_case": "Rapid decision-making cycle: Observe, Orient, Decide, Act",
+            "domain": "leadership",
+            "input_signals": ["rapid_adaptation", "competitive_response", "decision_speed"],
+            "recommended_when": "Operating in dynamic or competitive environment",
+            "avoid_when": "Deliberative planning",
+            "required_evidence": ["environmental_data", "decision_context", "action_capability"],
+            "output_type": "workflow",
+            "related_frameworks": ["Scenario Planning", "Decision Trees"],
+            "phase_3_relevance": "For agile response"
+          },
+          {
+            "id": "scenario_planning",
+            "name": "Scenario Planning",
+            "domain": "risk_decision",
+            "use_case": "Develop plausible future scenarios and prepare strategies for each",
+            "input_signals": ["uncertainty", "strategic_planning", "risk_preparation"],
+            "recommended_when": "Facing significant uncertainty in strategic planning",
+            "avoid_when": "Deterministic forecasting",
+            "required_evidence": ["trend_analysis", "uncertainty_factors", "strategic_implications"],
+            "output_type": "advisory",
+            "related_frameworks": ["PESTLE Analysis", "SWOT Analysis"],
+            "phase_3_relevance": "For strategic planning"
+          },
+          {
+            "id": "decision_trees",
+            "name": "Decision Trees",
+            "domain": "decision_science",
+            "use_case": "Visualize decisions, outcomes, and expected values",
+            "input_signals": ["decision_evaluation", "outcome_prediction", "value_assessment"],
+            "recommended_when": "Evaluating complex decisions with multiple outcomes",
+            "avoid_when": "Simple binary decisions",
+            "required_evidence": ["decision_options", "outcome_probabilities", "outcome_values"],
+            "output_type": "scoring",
+            "related_frameworks": ["Bayesian Decision Analysis", "Expected Value"],
+            "phase_3_relevance": "For complex decisions"
+          },
+          {
+            "id": "bayesian_decision_analysis",
+            "name": "Bayesian Decision Analysis",
+            "domain": "decision_science",
+            "use_case": "Update beliefs based on new evidence using probability",
+            "input_signals": ["hypothesis_testing", "evidence_incorporation", "belief_updating"],
+            "recommended_when": "Incorporating new evidence into decision-making",
+            "avoid_when": "Deterministic scenarios",
+            "required_evidence": ["prior_probabilities", "new_evidence", "likelihood_estimation"],
+            "output_type": "scoring",
+            "related_frameworks": ["Decision Trees", "Risk Assessment"],
+            "phase_3_relevance": "For probabilistic reasoning"
+          }
+        ]
+      },
+      "innovation": {
+        "name": "Innovation & Product Development",
+        "description": "Frameworks for generating ideas and bringing products to market",
+        "frameworks": [
+          {
+            "id": "lean_startup",
+            "name": "Lean Startup",
+            "domain": "product",
+            "use_case": "Reduce risk in new product development through rapid experimentation",
+            "input_signals": ["product_development", "uncertainty", "time_to_market"],
+            "recommended_when": "Testing new product ideas with limited resources",
+            "avoid_when": "Well-defined requirements",
+            "required_evidence": ["hypothesis", "experiment_results", "learning_data"],
+            "output_type": "workflow",
+            "related_frameworks": ["PDCA Cycle", "Design Thinking"],
+            "phase_3_relevance": "For product innovation"
+          },
+          {
+            "id": "design_thinking",
+            "name": "Design Thinking",
+            "domain": "product",
+            "use_case": "Human-centered innovation: empathize, define, ideate, prototype, test",
+            "input_signals": ["customer_problem", "solution_design", "innovation"],
+            "recommended_when": "Designing solutions for customer needs",
+            "avoid_when": "Incremental improvements",
+            "required_evidence": ["customer_insights", "problem_definition", "design_concepts"],
+            "output_type": "workflow",
+            "related_frameworks": ["Jobs To Be Done", "Customer Journey Mapping"],
+            "phase_3_relevance": "For user-centric design"
+          },
+          {
+            "id": "innovation_ambition_matrix",
+            "name": "Innovation Ambition Matrix",
+            "domain": "innovation",
+            "use_case": "Categorize innovations by ambition level: core, adjacent, transformational",
+            "input_signals": ["innovation_portfolio", "resource_allocation", "risk_management"],
+            "recommended_when": "Balancing innovation portfolio",
+            "avoid_when": "Single innovation evaluation",
+            "required_evidence": ["innovation_ideas", "market_opportunity", "capability_assessment"],
+            "output_type": "structural_relevance",
+            "related_frameworks": ["Three Horizons", "Disruptive Innovation"],
+            "phase_3_relevance": "For innovation portfolio management"
+          }
+        ]
+      },
+      "missing_frameworks": {
+        "name": "High-Value Missing Frameworks (Phase 2 Additions)",
+        "description": "Critical frameworks identified for addition during Phase 2 cleanup",
+        "frameworks": [
+          {
+            "id": "strategic_group_mapping",
+            "name": "Strategic Group Mapping",
+            "domain": "strategy",
+            "use_case": "Visualize competitive positioning within industry",
+            "input_signals": ["competitive_analysis", "positioning", "differentiation"],
+            "recommended_when": "Analyzing competitive landscape and positioning",
+            "avoid_when": "Internal analysis",
+            "required_evidence": ["competitive_data", "positioning_dimensions"],
+            "output_type": "diagnosis",
+            "related_frameworks": ["Porter's Five Forces", "Core Competency Model"],
+            "phase_3_relevance": "Important for competitive strategy"
+          },
+          {
+            "id": "lean_canvas",
+            "name": "Lean Canvas",
+            "domain": "product",
+            "use_case": "Lightweight business model design for startups",
+            "input_signals": ["business_model_design", "startup_planning", "rapid_iteration"],
+            "recommended_when": "Designing business model with limited information",
+            "avoid_when": "Established businesses",
+            "required_evidence": ["customer_understanding", "problem_statement", "solution_concept"],
+            "output_type": "advisory",
+            "related_frameworks": ["Business Model Canvas", "Lean Startup"],
+            "phase_3_relevance": "For early-stage ventures"
+          },
+          {
+            "id": "scor_model",
+            "name": "SCOR Model (Supply Chain Operations Reference)",
+            "domain": "supply_chain",
+            "use_case": "Standardized framework for evaluating supply chain performance",
+            "input_signals": ["supply_chain_optimization", "performance_evaluation", "benchmarking"],
+            "recommended_when": "Evaluating or improving supply chain performance",
+            "avoid_when": "Direct operations",
+            "required_evidence": ["supply_chain_data", "performance_metrics", "process_mapping"],
+            "output_type": "structural_relevance",
+            "related_frameworks": ["Value Stream Mapping", "Lean Manufacturing"],
+            "phase_3_relevance": "For supply chain orgs"
+          },
+          {
+            "id": "dupont_analysis",
+            "name": "DuPont Analysis",
+            "domain": "finance",
+            "use_case": "Decompose return on equity into component factors",
+            "input_signals": ["financial_analysis", "performance_drivers", "efficiency_improvement"],
+            "recommended_when": "Understanding drivers of financial performance",
+            "avoid_when": "Simple profitability assessment",
+            "required_evidence": ["financial_statements", "profitability_metrics", "operational_data"],
+            "output_type": "diagnosis",
+            "related_formulas": ["Return on Equity", "Return on Assets"],
+            "phase_3_relevance": "For financial analysis"
+          }
+        ]
+      }
+    }
+  }
+}
